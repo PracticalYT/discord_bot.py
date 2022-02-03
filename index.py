@@ -79,7 +79,7 @@ print(f"Launched client with PID {client.pid}")
 wsh = comclt.Dispatch("WScript.Shell")
 
 count = 5
-while (count < 10):
+while (count == 5):
    pyautogui.typewrite('/')
    pyautogui.typewrite('/e dance')
    time.sleep(10)
@@ -87,7 +87,6 @@ while (count < 10):
    ReleaseKey(0x1C)
    # time.sleep(random.randint(5,20)
    time.sleep(5)
-   count = count+1
 
 client.wait()
 print(f"Client was closed")
